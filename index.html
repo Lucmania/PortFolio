@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio Profesional</title>
+    <link rel="icon" href="img/Marca.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Encabezado y Navegación -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Port<span>folio</span></div>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Inicio</a></li>
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Presentsión -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hola, soy <span class="typing-text"></span></h1>
+                    <h3>Analista Programador Jr.</h3>
+                    <p>Apasionado por crear soluciones digitales innovadoras y funcionales</p>
+                    <a href="#portfolio" class="btn">Ver Proyectos</a>
+                </div>
+                <div class="hero-image">
+                    <img src="img/perfil.jpg" alt="Imagen de perfil" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mi -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/Lenguajes.jpg" alt="Sobre Mi" />
+                </div>
+                <div class="about-text">
+                    <h3>Analista Programador Jr.</h3>
+                    <p>Soy un desarrollador apasionado por la tecnología y la innovación digital. Mi objetivo es crear
+                        soluciones que no solo sean visualmente atractivas sino también altamente funcionales y
+                        escalables.</p>
+                    <p>La mayoria de mis proyectos por el momento se basan en el desarrollo de aplicaciones web modernas
+                        que satisfacen las necesidades de los clientes y ofrecen una excelente experiencia de usuario.
+                    </p>
+                    <p>Me encanta aprender nuevas tecnologías y mejorar mis habilidades constantemente. Estoy siempre en
+                        busca de nuevos desafíos y oportunidades para crecer profesionalmente.</p>
+                    <div class="skills">
+                        <h3>Habilidades Técnicas</h3>
+                        <div class="skills-container">
+                            <div class="skill-tag">JavaScript</div>
+                            <div class="skill-tag">Node.js</div>
+                            <div class="skill-tag">Express</div>
+                            <div class="skill-tag">MySQL</div>
+                            <div class="skill-tag">React</div>
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">Figma</div>
+                            <div class="skill-tag">Sketch</div>
+                            <div class="skill-tag">Git</div>
+                            <div class="skill-tag">GitHub</div>
+                            <div class="skill-tag">Docker</div>
+                            <div class="skill-tag">UML</div>
+                        </div>
+
+                        <h3>Metodologías Ágiles</h3>
+                        <div class="skills-container">
+                            <div class="skill-tag">Scrum</div>
+                            <div class="skill-tag">Kanban</div>
+                            <div class="skill-tag">Extreme Programming</div>
+                        </div>
+
+                        <h3>Idiomas</h3>
+                        <div class="language-container">
+                            <div class="language-item">
+                                <span class="language-name">Español</span>
+                                <span class="language-level">Nativo</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">Inglés</span>
+                                <span class="language-level">Básico</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Mis Servicios</h2>
+            <div class="services-container">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Creación de sitios web modernos, responsivos y optimizados para diferentes dispositivos y
+                        navegadores.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Diseño Responsive</h3>
+                    <p>Desarrollo de interfaces que se adaptan perfectamente a cualquier tamaño de pantalla para una
+                        experiencia óptima.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Desarrollo Backend</h3>
+                    <p>Implementación de servidores, APIs y bases de datos para crear aplicaciones web completas y
+                        funcionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">Apps</button>
+                <button class="filter-btn" data-filter="other">Otros</button>
+            </div>
+            <div class="portfolio-container">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ubicación</h3>
+                            <p>Villa María, Córdoba, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>costamagnalucas27@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Teléfono</h3>
+                            <p>+54 9 353 477-2356</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Lucmania" class="social-icon" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/lucas-costamagna-b06b3028b/" class="social-icon"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100093248393456" class="social-icon"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/lucas.c_byg/" class="social-icon" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="user_name" class="form-control" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="user_email" class="form-control" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" placeholder="Asunto">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" placeholder="Tu mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Lucas Costamagna. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</body>
+
+</html>
